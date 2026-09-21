@@ -310,6 +310,8 @@ public class Rendition: Hashable {
             case .image(let cgImage):
                 view = UIImageView(image: UIImage(cgImage: cgImage))
                 view.clipsToBounds = true
+            case .rawData:
+                break
             }
             
             return view
