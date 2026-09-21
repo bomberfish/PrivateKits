@@ -1,10 +1,12 @@
 --- !tapi-tbd
 tbd-version:     4
-targets:         [ x86_64-macos, arm64-macos, arm64e-macos, armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+targets:         [ x86_64-macos, arm64-macos, arm64e-macos, armv7-ios, armv7s-ios, arm64-ios, arm64e-ios,
+                   x86_64-ios-simulator, arm64-ios-simulator ]
 install-name:    '/System/Library/PrivateFrameworks/DiskImages2.framework/Versions/A/DiskImages2'
 current-version: 272
 exports:
-  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos, armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos, armv7-ios, armv7s-ios, arm64-ios, arm64e-ios,
+                       x86_64-ios-simulator, arm64-ios-simulator ]
     symbols:         [  ]
     objc-classes:    [ DIAttachParams, DIAttachedDeviceInfo, DIBaseParams, DIBlockDevice,
                        DICommonAttach, DIConvertParams, DICreateASIFParams, DICreateParams,
